@@ -52,20 +52,9 @@
   padding: 0;
 }
 
-body {
-  font-family: var(--font-family-sans);
-  font-size: var(--font-size-base);
-  line-height: 1.6;
-  color: var(--color-dark);
-  background-color: var(--color-light);
-}
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
