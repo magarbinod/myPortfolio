@@ -1,0 +1,36 @@
+{
+  "frontendDevelopment": [
+    { "name": "HTML/CSS", "percent": 95 },
+    { "name": "JavaScript", "percent": 88 },
+    { "name": "Vue.js", "percent": 82 }
+  ],
+  "backendDevelopment": [
+    { "name": "PHP", "percent": 78 },
+    { "name": "Laravel", "percent": 75 },
+    { "name": "MySQL", "percent": 72 }
+  ],
+  "designAndTools": [
+    { "name": "Figma", "percent": 85 },
+    { "name": "Photoshop", "percent": 70 },
+    { "name": "Illustrator", "percent": 68 }
+  ],
+  "cloudAndDevOps": [
+    { "name": "AWS", "percent": 76 },
+    { "name": "Docker", "percent": 73 },
+    { "name": "Git", "percent": 90 }
+  ],
+  "professionalExpertise": {
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "stats": [
+      { "icon": "trophy", "num": "5+", "label": "Years Experience" },
+      { "icon": "diagram-3", "num": "50+", "label": "Projects Completed" },
+      { "icon": "people", "num": "30+", "label": "Happy Clients" }
+    ]
+  },
+  "certifications": [
+    "AWS Certified",
+    "Laravel Expert",
+    "Vue.js Developer",
+    "UI/UX Design"
+  ]
+}

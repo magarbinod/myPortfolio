@@ -1,17 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 
 const Header = () => {
   // State for menu toggle
   const [isOpen, setIsOpen] = useState(false);
+  // State for scroll position
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Toggle function
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // Scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div>
-      <nav className="navbar fixed-top navbar-dark bg-dark">
+      <nav className={`navbar fixed-top navbar-dark ${isScrolled ? "scrolled" : ""}`}>
         <div className="container d-flex justify-content-between">
           <a className="navbar-brand text-white" href="/">
             Logo
@@ -29,7 +47,13 @@ const Header = () => {
           Home
         </Link>
         <Link to="/about" onClick={toggleMenu}>
+          Portfolio
+        </Link>
+        <Link to="/about" onClick={toggleMenu}>
           About
+        </Link>
+        <Link to="/about" onClick={toggleMenu}>
+          Contact Us
         </Link>
       </div>
     </div>
