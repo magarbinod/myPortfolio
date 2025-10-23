@@ -47,13 +47,13 @@ const Header = () => {
         <Link to="/" onClick={toggleMenu}>
           Home
         </Link>
-        <Link to="/about" onClick={toggleMenu}>
+        <Link to="/portfolio" onClick={toggleMenu}>
           Portfolio
         </Link>
         <Link to="/about" onClick={toggleMenu}>
           About
         </Link>
-        <Link to="/about" onClick={toggleMenu}>
+        <Link to="/contact" onClick={toggleMenu}>
           Contact Us
         </Link>
       </div>
