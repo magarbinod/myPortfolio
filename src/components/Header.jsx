@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
+import Logo from "../assets/images/Binod-Magar-Logo.png"
 
 const Header = () => {
   // State for menu toggle
@@ -32,7 +33,7 @@ const Header = () => {
       <nav className={`navbar fixed-top navbar-dark ${isScrolled ? "scrolled" : ""}`}>
         <div className="container d-flex justify-content-between">
           <a className="navbar-brand text-white" href="/">
-            Logo
+            <img src={Logo} className="img-fluid"></img>
           </a>
           <button className="btn btn-dark" onClick={toggleMenu}>
             <span className="navbar-toggler-icon"></span>
