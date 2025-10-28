@@ -2,43 +2,20 @@
   {
     "id": "1",
     "category": "branding",
-    "image": "https://images.unsplash.com/photo-1634942537034-2531766767d1?w=800&h=600&fit=crop",
-    "title": "Elemental Branding",
-    "description": "Comprehensive brand identity design focusing on natural elements and sustainable business practices."
+    "image": "../Daycare.png",
+    "title": "Project One"
   },
   {
     "id": "2",
     "category": "web",
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    "title": "Digital Workspace",
-    "description": "Modern web application designed for remote collaboration with intuitive user experience and clean aesthetics."
+    "image": "../Elite-Wake.png",
+    "title": "Project Two"
   },
   {
     "id": "3",
     "category": "photography",
-    "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop",
-    "title": "Urban Narratives",
-    "description": "Street photography series capturing the essence of metropolitan life and human connections."
-  },
-  {
-    "id": "4",
-    "category": "print",
-    "image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&h=600&fit=crop",
-    "title": "Annual Report Design",
-    "description": "Sophisticated annual report combining data visualization with compelling storytelling and premium print finishes."
-  },
-  {
-    "id": "5",
-    "category": "branding",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
-    "title": "Artisan Collection",
-    "description": "Luxury packaging design series celebrating traditional craftsmanship with contemporary minimalist approach."
-  },
-  {
-    "id": "6",
-    "category": "web",
-    "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=600&fit=crop",
-    "title": "Sustainable Commerce",
-    "description": "Eco-conscious e-commerce platform design promoting sustainable products with seamless shopping experience."
+    "image": "../Flame-Pizza-and-SeaFood.png",
+    "title": "Project Three"
   }
+
 ]

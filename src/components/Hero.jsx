@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import heroPhoto from "../assets/images/binod-hero-profile.jpg";
+import heroPhoto from "../assets/images/HeroImageTwo.png";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="row d-flex justify-content-center align-items-center">
             <div className="col-lg-6">
               <div className="bm-hero-info" data-aos="fade-right">
-                <h1>Frontend Developer</h1>
+                <h1>Frontend <span className="bm-hightlight">Developer</span></h1>
                 <p className="lead">
                   I’m a front-end developer who loves creating websites that
                   look great and work smoothly. I focus on clean design,

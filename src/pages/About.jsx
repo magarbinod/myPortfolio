@@ -1,5 +1,5 @@
 import React from "react";
-import heroPhoto from "../assets/images/binod-about-us.jpg";
+import heroPhoto from "../assets/images/binod-hero-profile.jpg";
 
 const About = () => {
   return (
@@ -24,7 +24,7 @@ const About = () => {
             {/* Intro & Skills */}
             <div className="col-lg-8">
               <div className="bm-intro">
-                <h2>About Me — Binod Magar</h2>
+                <h2>About Me — <span className="bm-hightlight">Binod Magar</span></h2>
                 <p>
                   I'm a creative front-end developer with hands-on experience
                   designing and building responsive, user-friendly websites. I

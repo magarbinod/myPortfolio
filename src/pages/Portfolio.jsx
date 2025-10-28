@@ -20,14 +20,14 @@ const Portfolio = () => {
     <section className="portfolio-section">
       <div className="container">
         <div className="section-header text-center">
-          <h2 className="section-title">Portfolio</h2>
+          <h2>Portfolio</h2>
           <p className="section-subtitle">
             A curated selection of recent work spanning brand identity, digital
             experiences, and visual storytelling.
           </p>
         </div>
 
-        <ul className="filter-nav text-center list-inline mb-4">
+        {/* <ul className="filter-nav text-center list-inline mb-4">
           {["all", "branding", "web", "photography", "print"].map((cat) => (
             <li key={cat} className="list-inline-item mx-2">
               <button
@@ -42,7 +42,7 @@ const Portfolio = () => {
               </button>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         <div className="row portfolio-container">
           {filteredItems.map((item) => (

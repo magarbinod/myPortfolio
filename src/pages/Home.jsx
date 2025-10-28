@@ -5,6 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.css"; // <-- add this
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
 import About from "./About";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
 
         <Skills />
         <Portfolio />
+        <Footer/>
       </div>
     </>
   );

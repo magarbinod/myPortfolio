@@ -1,11 +1,11 @@
 /* Hero Section Styles */
 .bm-hero {
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #000000 0%, #14213d 100%);
-  min-height: 100vh;
+  min-height: 75vh;
   position: relative;
   overflow: hidden;
   
@@ -29,9 +29,10 @@
   line-height: 1.1;
   background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   background-clip: text;
 }
+
 
 .bm-hero-info p.lead {
   font-size: 1.125rem;
@@ -156,21 +157,22 @@
 .bm-floating-element {
   position: relative;
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
   margin: 0 auto;
 }
 
 .cw-hero-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 30px;
-  position: relative;
-  z-index: 2;
-  display: block;
+    width: 100%;
+    /* height: 50vh; */
+    object-fit: cover;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-bottom: -15rem;
 }
 
-.cw-overlay {
+/* .cw-overlay {
   background: linear-gradient(
     135deg,
     rgba(255, 195, 0, 0.3) 0%,
@@ -183,7 +185,7 @@
   width: 100%;
   height: 100%;
   border-radius: 30px;
-}
+} */
 
 /* Background Decorations */
 .bm-hero::before {
