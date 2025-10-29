@@ -18,6 +18,7 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio-section">
+        
       <div className="container">
         <div className="section-header text-center">
           <h2>Portfolio</h2>

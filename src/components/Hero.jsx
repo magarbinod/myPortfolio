@@ -27,12 +27,12 @@ const Hero = () => {
                   experiences.
                 </p>
                 <div className="bm-button mt-5">
-                  <a href="/porfolio">
+                  <a href="/portfolio">
                     <button className="btn btn-primary me-3">
                       View My Work
                     </button>
                   </a>
-                  <a href="/porfolio">
+                  <a href="/contact">
                     <button className="btn btn-outline border-white text-white">
                       Get In Touch
                     </button>

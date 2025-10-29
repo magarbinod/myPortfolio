@@ -1,9 +1,11 @@
 import React from "react";
 import heroPhoto from "../assets/images/binod-hero-profile.jpg";
+import Title from "../components/Title";
 
 const About = () => {
   return (
     <div>
+     
       {/* About Us */}
       <div className="bm-about-us">
         <div className="container">

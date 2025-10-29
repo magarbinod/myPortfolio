@@ -20,11 +20,10 @@
     { "name": "Git", "percent": 90 }
   ],
   "professionalExpertise": {
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "description": "With years of hands-on experience crafting modern, responsive, and user-friendly websites, I specialize in turning creative ideas into functional digital experiences. From sleek business sites to dynamic web applications, my goal is to deliver clean code, pixel-perfect design, and seamless performance across all devices.",
     "stats": [
-      { "icon": "trophy", "num": "5+", "label": "Years Experience" },
-      { "icon": "diagram-3", "num": "50+", "label": "Projects Completed" },
-      { "icon": "people", "num": "30+", "label": "Happy Clients" }
+      { "icon": "trophy", "num": "6+", "label": "Years Experience" },
+      { "icon": "diagram-3", "num": "50+", "label": "Projects Completed" }
     ]
   },
   "certifications": [

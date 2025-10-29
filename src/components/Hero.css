@@ -5,10 +5,9 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #000000 0%, #14213d 100%);
-  min-height: 75vh;
+  min-height: 900px;
   position: relative;
   overflow: hidden;
-  
 }
 
 /* Container */
@@ -32,7 +31,6 @@
   /* -webkit-text-fill-color: transparent; */
   background-clip: text;
 }
-
 
 .bm-hero-info p.lead {
   font-size: 1.125rem;
@@ -104,12 +102,12 @@
 .btn-primary {
   color: #000000;
   background: linear-gradient(135deg, #ffc300 0%, #ffd60a 100%);
-  box-shadow: 0 10px 30px rgba(255, 195, 0, 0.3);
+  /* box-shadow: 0 10px 30px rgba(255, 195, 0, 0.3); */
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 15px 40px rgba(255, 195, 0, 0.4);
+  /* box-shadow: 0 15px 40px rgba(255, 195, 0, 0.4); */
 }
 
 .btn-outline {
@@ -159,17 +157,21 @@
   width: 100%;
   /* max-width: 500px; */
   margin: 0 auto;
+  overflow: visible;
 }
 
 .cw-hero-img {
-    width: 100%;
-    /* height: 50vh; */
-    object-fit: cover;
-    border-radius: 30px;
-    position: relative;
-    z-index: 2;
-    display: block;
-    margin-bottom: -15rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  transform: translateY(6rem);
+  -webkit-transform: translateY(6rem);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* .cw-overlay {
@@ -239,6 +241,7 @@
 @media (max-width: 991px) {
   .bm-hero {
     padding: 4rem 0;
+    min-height: 700px;
   }
 
   .bm-hero-info h1 {
@@ -248,11 +251,19 @@
   .bm-floating-element {
     margin-top: 3rem;
   }
+
+  .cw-hero-img {
+    max-width: 450px;
+    margin: 0 auto;
+    transform: translateY(8rem);
+    -webkit-transform: translateY(8rem);
+  }
 }
 
 @media (max-width: 768px) {
   .bm-hero {
     padding: 3rem 0;
+    min-height: 600px;
   }
 
   .hero-stats {
@@ -281,9 +292,20 @@
   .social-links {
     justify-content: center;
   }
+
+  .cw-hero-img {
+    max-width: 350px;
+    border-radius: 20px;
+    transform: translateY(5rem);
+    -webkit-transform: translateY(5rem);
+  }
 }
 
 @media (max-width: 576px) {
+  .bm-hero {
+    min-height: 500px;
+  }
+
   .bm-hero-info h1 {
     font-size: 2rem;
   }
@@ -304,5 +326,18 @@
   .cw-overlay {
     right: -5px;
     bottom: -5px;
+  }
+
+  .cw-hero-img {
+    max-width: 100%;
+    border-radius: 15px;
+    transform: translateY(3rem);
+    -webkit-transform: translateY(3rem);
+  }
+
+  .bm-hero::before,
+  .bm-hero::after {
+    width: 200px;
+    height: 200px;
   }
 }
