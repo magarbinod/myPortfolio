@@ -365,7 +365,7 @@ img {
     rgba(80, 75, 0, 0.2) 0%,
     rgba(109, 91, 0, 0.2) 100%
   );
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  /* border: 1px solid rgba(99, 102, 241, 0.3); */
   border-radius: 15px;
   margin-bottom: 1.5rem;
   font-size: 1.75rem;
@@ -785,10 +785,10 @@ img {
   justify-content: center;
   background: linear-gradient(
     135deg,
-    rgba(99, 102, 241, 0.2) 0%,
+    rgba(129, 120, 41, 0.2) 0%,
     rgba(255, 214, 10, 0.2) 100%
   );
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  /* border: 1px solid rgba(99, 102, 241, 0.3); */
   border-radius: 15px;
   font-size: 1.5rem;
   color: #ffd60a;

@@ -32,9 +32,9 @@ const Hero = () => {
                       View My Work
                     </button>
                   </a>
-                  <a href="/contact">
+                  <a target="_blank" href="https://publuu.com/flip-book/999695/2204941">
                     <button className="btn btn-outline border-white text-white">
-                      Get In Touch
+                      Resume <i class="bi bi-download mx-3"></i>
                     </button>
                   </a>
                 </div>

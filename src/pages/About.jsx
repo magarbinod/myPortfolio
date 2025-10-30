@@ -52,7 +52,7 @@ const About = () => {
                     <i className="bi bi-palette"></i>
                   </div>
                   <h4>UI/UX Design</h4>
-                  <p>Adobe Creative Suite, Figma, Photoshop, Illustrator</p>
+                  <p>Adobe Creative Suite, Figma, Photoshop, Illustrator, Adobe XD</p>
                 </div>
                 <div className="bm-skill-item">
                   <div className="bm-skill-icon">

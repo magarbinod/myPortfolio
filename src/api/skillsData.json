@@ -2,7 +2,7 @@
   "frontendDevelopment": [
     { "name": "HTML/CSS", "percent": 95 },
     { "name": "JavaScript", "percent": 88 },
-    { "name": "Vue.js", "percent": 82 }
+    { "name": "React.js", "percent": 82 }
   ],
   "backendDevelopment": [
     { "name": "PHP", "percent": 78 },
@@ -11,12 +11,13 @@
   ],
   "designAndTools": [
     { "name": "Figma", "percent": 85 },
-    { "name": "Photoshop", "percent": 70 },
-    { "name": "Illustrator", "percent": 68 }
+    { "name": "Photoshop", "percent": 95 },
+    { "name": "Illustrator", "percent": 98 },
+    { "name": "AdobeXD", "percent": 98 }
   ],
   "cloudAndDevOps": [
     { "name": "AWS", "percent": 76 },
-    { "name": "Docker", "percent": 73 },
+    { "name": "MongoDB", "percent": 73 },
     { "name": "Git", "percent": 90 }
   ],
   "professionalExpertise": {
@@ -27,9 +28,9 @@
     ]
   },
   "certifications": [
-    "AWS Certified",
-    "Laravel Expert",
-    "Vue.js Developer",
+    "Udemy Learn React",
+    "C# Fundaments",
+ 
     "UI/UX Design"
   ]
 }
