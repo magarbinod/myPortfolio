@@ -2,22 +2,24 @@
   {
     "id": "1",
     "category": "branding",
-    "image": "../ProjectTwo.jpg",
+    "image": "../ProjectThree.jpg",
     "title": "Project One",
-    "url": "https://gf.siteflex.com/"
+    "url": "https://tc.siteflex.com/"
   },
   {
     "id": "2",
     "category": "web",
-    "image": "../Elite-Wake.png",
+    "image": "../ProjectTwo.jpg",
     "title": "Project Two",
-    "url": "https://example.com/project-two"
+    "url": "https://gf.siteflex.com/"
   },
   {
     "id": "3",
     "category": "photography",
-    "image": "../Flame-Pizza-and-SeaFood.png",
+    "image": "../ProjectOne.jpg",
     "title": "Project Three",
-    "url": "https://example.com/project-three"
+    "url": "https://spcc.siteflex.com/"
   }
+
+
 ]

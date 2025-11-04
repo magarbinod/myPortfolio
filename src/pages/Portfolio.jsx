@@ -46,7 +46,7 @@ const Portfolio = () => {
           ))}
         </ul> */}
 
-        <div className="row portfolio-container">
+        <div className="row portfolio-container text-center">
           {filteredItems.map((item) => (
             <div key={item.id} className="col-lg-4 portfolio-item mb-4">
               <div className="portfolio-card">
@@ -59,10 +59,10 @@ const Portfolio = () => {
                   />
                   <div className="portfolio-overlay">
                     <div className="portfolio-actions">
-                      <a href={item.url} className="action-btn">
+                      <a target="_blank" href={item.url} className="action-btn">
                         <i className="bi bi-eye"></i>
                       </a>
-                      <a href={item.url} className="action-btn">
+                      <a target="_blank" href={item.url} className="action-btn">
                         <i className="bi bi-arrow-up-right"></i>
                       </a>
                     </div>
