@@ -4,6 +4,7 @@ import "../App.css";
 import portfolioItems from "../api/portfolioData.json";
 
 
+
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("all");
 
@@ -58,10 +59,10 @@ const Portfolio = () => {
                   />
                   <div className="portfolio-overlay">
                     <div className="portfolio-actions">
-                      <a href="#" className="action-btn">
+                      <a href={item.url} className="action-btn">
                         <i className="bi bi-eye"></i>
                       </a>
-                      <a href="#" className="action-btn">
+                      <a href={item.url} className="action-btn">
                         <i className="bi bi-arrow-up-right"></i>
                       </a>
                     </div>

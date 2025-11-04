@@ -2,20 +2,22 @@
   {
     "id": "1",
     "category": "branding",
-    "image": "../Daycare.png",
-    "title": "Project One"
+    "image": "../ProjectTwo.jpg",
+    "title": "Project One",
+    "url": "https://gf.siteflex.com/"
   },
   {
     "id": "2",
     "category": "web",
     "image": "../Elite-Wake.png",
-    "title": "Project Two"
+    "title": "Project Two",
+    "url": "https://example.com/project-two"
   },
   {
     "id": "3",
     "category": "photography",
     "image": "../Flame-Pizza-and-SeaFood.png",
-    "title": "Project Three"
+    "title": "Project Three",
+    "url": "https://example.com/project-three"
   }
-
 ]
