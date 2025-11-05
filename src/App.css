@@ -995,7 +995,7 @@ h4 {
 
 /* Skills */
 .portfolio-section {
-  padding: 100px 0;
+  padding: 5rem 0;
 }
 
 .section-header {
@@ -1056,11 +1056,6 @@ h4 {
   width: 100%;
   height: 1px;
   background: var(--text-primary);
-}
-
-.portfolio-card {
-  margin-bottom: 40px;
-  overflow: hidden;
 }
 
 .portfolio-image {

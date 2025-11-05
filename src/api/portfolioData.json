@@ -1,24 +1,31 @@
 [
   {
     "id": "1",
-    "category": "branding",
+    "category": "Web Design",
     "image": "../ProjectThree.jpg",
     "title": "Project One",
     "url": "https://tc.siteflex.com/"
   },
   {
     "id": "2",
-    "category": "web",
+    "category": "Web Design",
     "image": "../ProjectTwo.jpg",
     "title": "Project Two",
     "url": "https://gf.siteflex.com/"
   },
   {
     "id": "3",
-    "category": "photography",
+    "category": "Web Design",
     "image": "../ProjectOne.jpg",
     "title": "Project Three",
     "url": "https://spcc.siteflex.com/"
+  },
+   {
+    "id": "4",
+    "category": "Web Design",
+    "image": "../ProjectFive.jpg",
+    "title": "Project Four",
+    "url": "https://oo-siteflex.tenantsites.myaccountcenter.com/"
   }
 
 
