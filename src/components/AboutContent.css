@@ -1,0 +1,108 @@
+/* Home About Us ========================================================= */
+
+/* About Section Styles */
+.bm-about-us {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.bm-about-us::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(99, 102, 241, 0.08) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.bm-about-us::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 214, 10, 0.08) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: float 6s ease-in-out infinite 3s;
+}
+
+.bm-about-us .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Profile Image */
+.bm-profile-image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.bm-profile-picture {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.bm-profile-picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.2) 0%,
+    rgba(255, 214, 10, 0.2) 100%
+  );
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.bm-profile-picture:hover::before {
+  opacity: 1;
+}
+
+.bm-profile-picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.bm-profile-picture:hover img {
+  transform: scale(1.05);
+}
+
+/* Intro Section */
+.bm-intro {
+  margin-bottom: 3rem;
+}
+
+
+
+.bm-intro p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #b0b0b0;
+  max-width: 800px;
+}

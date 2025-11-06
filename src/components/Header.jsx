@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <div>
-      <nav className={`navbar fixed-top navbar-dark ${isScrolled ? "scrolled" : ""}`}>
+      <nav className={`navbar navbar-dark ${isScrolled ? "scrolled" : ""}`}>
         <div className="container d-flex justify-content-between">
           <a className="navbar-brand text-white" href="/">
             <img src={Logo} className="img-fluid"></img>

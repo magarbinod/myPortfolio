@@ -2,14 +2,14 @@ import React from "react";
 import "./Hero.css";
 import heroPhoto from "../assets/images/HeroImageTwo.png";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Hero = () => {
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
-      once: true,     // whether animation happens only once while scrolling down
+      once: true, // whether animation happens only once while scrolling down
     });
   }, []);
   return (
@@ -19,12 +19,14 @@ const Hero = () => {
           <div className="row d-flex justify-content-center align-items-center">
             <div className="col-lg-6">
               <div className="bm-hero-info" data-aos="fade-right">
-                <h1>Frontend <span className="bm-hightlight">Developer</span></h1>
+                <h1>
+                  Frontend <span className="bm-highlight">Developer</span>
+                </h1>
                 <p className="lead">
-                  I’m a front-end developer who loves creating websites that
-                  look great and work smoothly. I focus on clean design,
-                  responsive layouts, and turning ideas into engaging digital
-                  experiences.
+                  I'm a web developer who enjoys building clean, responsive, and
+                  user-friendly websites. I care about both how a site looks and
+                  how it feels to use, turning ideas into smooth, engaging
+                  online experiences.
                 </p>
                 <div className="bm-button mt-5">
                   <a href="/portfolio">
@@ -32,7 +34,10 @@ const Hero = () => {
                       View My Work
                     </button>
                   </a>
-                  <a target="_blank" href="https://publuu.com/flip-book/999695/2204941">
+                  <a
+                    target="_blank"
+                    href="https://publuu.com/flip-book/999695/2204941"
+                  >
                     <button className="btn btn-outline border-white text-white">
                       Resume <i class="bi bi-download mx-3"></i>
                     </button>
@@ -64,7 +69,10 @@ const Hero = () => {
             </div>
 
             <div className="col-lg-6 position-relative">
-              <div className="bm-floating-element position-relative" data-aos="fade-left">
+              <div
+                className="bm-floating-element position-relative"
+                data-aos="fade-left"
+              >
                 <img
                   className="img-fluid cw-hero-img"
                   src={heroPhoto}

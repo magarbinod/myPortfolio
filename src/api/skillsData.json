@@ -1,25 +1,22 @@
 {
   "frontendDevelopment": [
-    { "name": "HTML/CSS", "percent": 95 },
-    { "name": "JavaScript", "percent": 88 },
-    { "name": "React.js", "percent": 82 }
+    { "name": "HTML/CSS", "percent": 98 },
+    { "name": "JavaScript", "percent": 95 },
+    { "name": "PHP", "percent": 90 },
+    { "name": "Bootstrap", "percent": 98 }
   ],
   "backendDevelopment": [
     { "name": "PHP", "percent": 78 },
-    { "name": "Laravel", "percent": 75 },
+   { "name": "Git", "percent": 90 },
     { "name": "MySQL", "percent": 72 }
   ],
   "designAndTools": [
-    { "name": "Figma", "percent": 85 },
-    { "name": "Photoshop", "percent": 95 },
+    { "name": "Figma", "percent": 93 },
+    { "name": "Photoshop", "percent": 98 },
     { "name": "Illustrator", "percent": 98 },
     { "name": "AdobeXD", "percent": 98 }
   ],
-  "cloudAndDevOps": [
-    { "name": "AWS", "percent": 76 },
-    { "name": "MongoDB", "percent": 73 },
-    { "name": "Git", "percent": 90 }
-  ],
+ 
   "professionalExpertise": {
     "description": "With years of hands-on experience crafting modern, responsive, and user-friendly websites, I specialize in turning creative ideas into functional digital experiences. From sleek business sites to dynamic web applications, my goal is to deliver clean code, pixel-perfect design, and seamless performance across all devices.",
     "stats": [

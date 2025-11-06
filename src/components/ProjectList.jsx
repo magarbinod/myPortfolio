@@ -1,17 +1,21 @@
-import "../App.css";
-
+import './ProjectList.css'
 import portfolioItems from "../api/portfolioData.json";
-
 
 const ProjectList = () => {
   return (
-     <section className="portfolio-section">
-        
+    <section className="portfolio-section">
       <div className="container">
         <div className="section-header text-center">
-          <h2>Projects & <span className="bm-hightlight">Case Studies</span></h2>
+          <span class="cw-badge-two">
+            <i class="bi bi-code-slash me-2"></i>My Works
+          </span>{" "}
+          <h2>
+            Projects & <span className="bm-highlight">Case Studies</span>
+          </h2>
           <p className="section-subtitle">
-           A few examples of my recent work. I love turning ideas into interactive, well-built websites that look great and perform even better.
+            A few examples of my recent work. I love turning ideas into
+            interactive, well-built websites that look great and perform even
+            better.
           </p>
         </div>
 
@@ -64,7 +68,7 @@ const ProjectList = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectList
+export default ProjectList;
