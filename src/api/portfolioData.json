@@ -13,19 +13,34 @@
     "title": "Project Two",
     "url": "https://gf.siteflex.com/"
   },
-  {
+   {
     "id": "3",
     "category": "Web Design",
-    "image": "../ProjectOne.jpg",
+    "image": "../ProjectNine.jpg",
     "title": "Project Three",
-    "url": "https://spcc.siteflex.com/"
+    "url": "https://edge.siteflex.com/"
   },
    {
     "id": "4",
     "category": "Web Design",
-    "image": "../ProjectFive.jpg",
+    "image": "../projectSix.jpg",
     "title": "Project Four",
-    "url": "https://oo-siteflex.tenantsites.myaccountcenter.com/"
+    "url": "https://hh.siteflex.com/"
+  },
+
+  {
+    "id": "5",
+    "category": "Web Design",
+    "image": "../ProjectOne.jpg",
+    "title": "Project Five",
+    "url": "https://spcc.siteflex.com/"
+  },
+   {
+    "id": "6",
+    "category": "Web Design",
+    "image": "../ProjectSeven.jpg",
+    "title": "Project Six",
+    "url": "https://spc.siteflex.com/"
   }
 
 

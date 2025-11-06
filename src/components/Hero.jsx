@@ -16,7 +16,7 @@ const Hero = () => {
     <div>
       <div className="bm-hero">
         <div className="container">
-          <div className="row d-flex justify-content-center align-items-center">
+          <div className="row d-flex justify-content-center align-items-center text-center text-md-start text-lg-start">
             <div className="col-lg-6">
               <div className="bm-hero-info" data-aos="fade-right">
                 <h1>
@@ -36,7 +36,7 @@ const Hero = () => {
                   </a>
                   <a
                     target="_blank"
-                    href="https://publuu.com/flip-book/999695/2204941"
+                    href="https://drive.google.com/file/d/1dLJfGJ8MYHtvrxer-S8v8r5ooNDTl6Ad/view?usp=sharing"
                   >
                     <button className="btn btn-outline border-white text-white">
                       Resume <i class="bi bi-download mx-3"></i>

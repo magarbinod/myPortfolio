@@ -3,9 +3,10 @@ import Hero from "../components/Hero";
 import "../App.css";
 import "bootstrap-icons/font/bootstrap-icons.css"; // <-- add this
 import Skills from "../components/Skills";
-import About from "./About";
+
 import Footer from "../components/Footer";
 import ProjectList from "../components/ProjectList";
+import AboutContent from "../components/AboutContent";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       <div>
         <Hero />
 
-        <About />
+        <AboutContent />
 
         <Skills />
         <ProjectList />

@@ -22,7 +22,7 @@ const AboutContent = () => {
                     </div>
         
                     {/* Intro & Skills */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 px-0 px-lg-4">
                       <div className="bm-intro">
                         <span class="cw-badge-two">
                           <i class="bi bi-code-slash me-2"></i>About
@@ -39,6 +39,31 @@ const AboutContent = () => {
                           collaborating with teams to deliver polished, visually
                           appealing digital experiences.
                         </p>
+                        <div className="mt-3">
+                        <div className="wrapper d-flex">
+                          <div className="me-2 fw-bold"><i class="bi bi-mortarboard me-3"></i> 2015 - 2019</div>
+                          <div className="bm-description">
+                            Bachelor's degree in Graphic and Web Design
+                          </div>
+                        </div>
+                        <div className="wrapper d-flex">
+                          <div className="me-2 fw-bold"><i class="bi bi-mortarboard me-3"></i>2021 - 2022</div>
+                          <div className="bm-description">
+                            Certificate, Web Development
+                          </div>
+                        </div>
+                        <a href="/about">
+                    <button className="btn btn-primary mt-4">
+                      Learn More
+                    </button>
+                  </a>
+                        {/* <div className="wrapper d-flex border-start mt-5">
+                          <div className="bm-year me-2 fw-bold">2021</div>
+                          <div className="bm-description">
+                            B.A. in Digital Design, Creative University
+                          </div>
+                        </div> */}
+                      </div>
                       </div>
         
                       {/* Skills Grid */}
@@ -67,26 +92,7 @@ const AboutContent = () => {
                       </div> */}
         
                       {/* Education / Timeline */}
-                      <div className="bm-academy-timeline">
-                        <div className="wrapper d-flex border-start mt-5">
-                          <div className="bm-year me-2 fw-bold">2015 - 2019</div>
-                          <div className="bm-description">
-                            Bachelor's degree in Graphic and Web Design
-                          </div>
-                        </div>
-                        <div className="wrapper d-flex border-start mt-5">
-                          <div className="bm-year me-2 fw-bold">2021 - 2022</div>
-                          <div className="bm-description">
-                            Certificate, Web Development
-                          </div>
-                        </div>
-                        {/* <div className="wrapper d-flex border-start mt-5">
-                          <div className="bm-year me-2 fw-bold">2021</div>
-                          <div className="bm-description">
-                            B.A. in Digital Design, Creative University
-                          </div>
-                        </div> */}
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
