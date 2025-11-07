@@ -32,9 +32,9 @@ const Header = () => {
     <div>
       <nav className={`navbar navbar-dark ${isScrolled ? "scrolled" : ""}`}>
         <div className="container d-flex justify-content-between">
-          <a className="navbar-brand text-white" href="/">
+          <Link className="navbar-brand text-white" to="/">
             <img src={Logo} className="img-fluid"></img>
-          </a>
+          </Link>
           <button className="btn btn-dark" onClick={toggleMenu}>
             <span className="navbar-toggler-icon"></span>
           </button>

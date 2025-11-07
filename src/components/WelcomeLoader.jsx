@@ -7,6 +7,7 @@ export default function WelcomeLoader({ children }) {
 
   const text = "Welcome";
 
+
   const container = {
     hidden: { opacity: 0 },
     visible: {
@@ -46,7 +47,7 @@ export default function WelcomeLoader({ children }) {
     left: 0,
     right: 0,
     bottom: 0,
-    background: 'linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%)',
+    background: 'linear-gradient(135deg, #000000 0%, #14213d 100%',
     zIndex: 9999,
     transition: 'opacity 0.5s ease-in-out',
     opacity: fadeOut ? 0 : 1
@@ -79,7 +80,7 @@ export default function WelcomeLoader({ children }) {
                   <motion.span
                     key={index}
                     variants={child}
-                    style={{ display: 'inline-block' }}
+                    style={{ display: 'inline-block', wordSpacing: '50px' }}
                   >
                     {letter}
                   </motion.span>

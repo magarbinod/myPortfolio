@@ -5,6 +5,8 @@ import heroPhoto from "../assets/images/HeroImageTwo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 
 const Hero = () => {
   useEffect(() => {
@@ -30,11 +32,11 @@ const Hero = () => {
                   online experiences.
                 </p>
                 <div className="bm-button mt-5">
-                  <a href="/portfolio">
+                  <Link to="/portfolio">
                     <button className="btn btn-primary me-3">
                       View My Work
                     </button>
-                  </a>
+                  </Link>
                   <a
                     target="_blank"
                     href="https://drive.google.com/file/d/1dLJfGJ8MYHtvrxer-S8v8r5ooNDTl6Ad/view?usp=sharing"
