@@ -1,7 +1,10 @@
-import React from "react";
-import skillsData from "../api/skillsData.json"; // ✅ Import the JSON data
-import './Skills.css'
-const Skills = () => {
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import skillsData from "../api/skillsData.json";
+import './SkillsList.css'
+
+const SkillsList = () => {
   const {
     frontendDevelopment,
     backendDevelopment,
@@ -10,17 +13,28 @@ const Skills = () => {
     certifications,
   } = skillsData;
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+      offset: 50,
+      easing: 'ease-in-out',
+    });
+    
+    AOS.refresh();
+  }, []);
+
   return (
     <section id="skills" className="skills section">
       <div
-        className="container aos-init aos-animate"
+        className="container"
         data-aos="fade-up"
         data-aos-delay="100"
       >
         <div className="row text-center">
           <div className="col-lg-12">
-            <span class="cw-badge-two">
-              <i class="bi bi-code-slash me-2"></i>My Skills
+            <span className="cw-badge-two">
+              <i className="bi bi-code-slash me-2"></i>My Skills
             </span>
             <h2 className="mb-5">
               Professional <span className="bm-highlight">Expertise</span>
@@ -34,8 +48,8 @@ const Skills = () => {
               <div className="row g-4">
                 {/* === Frontend Development === */}
                 <div
-                  className="col-md-4 aos-init aos-animate"
-                  data-aos="flip-left"
+                  className="col-md-4"
+                  data-aos="fade-up"
                   data-aos-delay="200"
                 >
                   <div className="skill-card">
@@ -70,8 +84,8 @@ const Skills = () => {
 
                 {/* === Backend Development === */}
                 <div
-                  className="col-md-4 aos-init aos-animate"
-                  data-aos="flip-left"
+                  className="col-md-4"
+                  data-aos="fade-up"
                   data-aos-delay="300"
                 >
                   <div className="skill-card">
@@ -106,8 +120,8 @@ const Skills = () => {
 
                 {/* === Design & Tools === */}
                 <div
-                  className="col-md-4 aos-init aos-animate"
-                  data-aos="flip-left"
+                  className="col-md-4"
+                  data-aos="fade-up"
                   data-aos-delay="400"
                 >
                   <div className="skill-card">
@@ -139,52 +153,6 @@ const Skills = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* ===== Right Column ===== */}
-                {/* <div className="col-lg-12">
-                  <div
-                    className="skills-summary aos-init aos-animate"
-                    data-aos="fade-left"
-                    data-aos-delay="200"
-                  >
-                    <h3>Professional Expertise</h3>
-                    <p>{professionalExpertise.description}</p>
-
-                    <div className="summary-stats">
-                      {professionalExpertise.stats.map((stat, i) => (
-                        <div
-                          className="stat-item aos-init aos-animate"
-                          data-aos="zoom-in"
-                          data-aos-delay={300 + i * 100}
-                          key={i}
-                        >
-                          <div className="stat-circle">
-                            <i className={`bi bi-${stat.icon}`}></i>
-                          </div>
-                          <div className="stat-info">
-                            <span className="stat-number">{stat.num}</span>
-                            <span className="stat-label">{stat.label}</span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-
-                    <div
-                      className="skills-badges aos-init aos-animate"
-                      data-aos="fade-up"
-                      data-aos-delay="600"
-                    >
-                      <h4>Certifications</h4>
-                      <div className="badge-list">
-                        {certifications.map((cert, i) => (
-                          <div className="skill-badge" key={i}>
-                            {cert}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -194,4 +162,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsList;

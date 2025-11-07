@@ -9,6 +9,12 @@
   position: relative;
   overflow: hidden;
 }
+.bm-helo {
+  color: #ff008c;
+}
+.cw-h {
+  color: #0887ff;
+}
 
 /* Container */
 .bm-hero .container {

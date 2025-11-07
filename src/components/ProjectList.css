@@ -143,3 +143,11 @@
     padding: 60px 0;
   }
 }
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}

@@ -106,3 +106,14 @@
   color: #b0b0b0;
   max-width: 800px;
 }
+/* AOS Animation Setup */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Keep your existing AboutContent.css styles below */

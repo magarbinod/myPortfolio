@@ -1,13 +1,31 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import './ProjectList.css'
 import portfolioItems from "../api/portfolioData.json";
 
 const ProjectList = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+      offset: 50,
+      easing: 'ease-in-out',
+    });
+    
+    AOS.refresh();
+  }, []);
+
   return (
     <section className="portfolio-section">
       <div className="container">
-        <div className="section-header text-center">
-          <span class="cw-badge-two">
-            <i class="bi bi-code-slash me-2"></i>My Works
+        <div 
+          className="section-header text-center"
+          data-aos="fade-up"
+          data-aos-delay="0"
+        >
+          <span className="cw-badge-two">
+            <i className="bi bi-code-slash me-2"></i>My Works
           </span>{" "}
           <h2>
             Projects & <span className="bm-highlight">Case Studies</span>
@@ -19,26 +37,15 @@ const ProjectList = () => {
           </p>
         </div>
 
-        {/* <ul className="filter-nav text-center list-inline mb-4">
-          {["all", "branding", "web", "photography", "print"].map((cat) => (
-            <li key={cat} className="list-inline-item mx-2">
-              <button
-                className={`filter-btn btn btn-outline-primary ${
-                  activeFilter === cat ? "active" : ""
-                }`}
-                onClick={() => handleFilterClick(cat)}
-              >
-                {cat === "all"
-                  ? "All Work"
-                  : cat.charAt(0).toUpperCase() + cat.slice(1)}
-              </button>
-            </li>
-          ))}
-        </ul> */}
-
         <div className="row portfolio-container text-center">
-          {portfolioItems.map((item) => (
-            <div key={item.id} className="col-lg-6 portfolio-item mb-4">
+          {portfolioItems.map((item, index) => (
+            <div 
+              key={item.id} 
+              className="col-lg-6 portfolio-item mb-4"
+              data-aos="fade-up"
+              data-aos-delay={100 + (index * 100)}
+              data-aos-duration="800"
+            >
               <div className="portfolio-card">
                 <div className="portfolio-image position-relative">
                   <img
@@ -49,10 +56,10 @@ const ProjectList = () => {
                   />
                   <div className="portfolio-overlay">
                     <div className="portfolio-actions">
-                      <a target="_blank" href={item.url} className="action-btn">
+                      <a target="_blank" href={item.url} className="action-btn" rel="noreferrer">
                         <i className="bi bi-eye"></i>
                       </a>
-                      <a target="_blank" href={item.url} className="action-btn">
+                      <a target="_blank" href={item.url} className="action-btn" rel="noreferrer">
                         <i className="bi bi-arrow-up-right"></i>
                       </a>
                     </div>
@@ -60,7 +67,6 @@ const ProjectList = () => {
                 </div>
                 <div className="portfolio-content">
                   <h3 className="portfolio-title">{item.title}</h3>
-                  {/* <p className="portfolio-description">{item.description}</p> */}
                 </div>
               </div>
             </div>

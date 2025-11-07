@@ -2,23 +2,21 @@ import React from "react";
 import Hero from "../components/Hero";
 import "../App.css";
 import "bootstrap-icons/font/bootstrap-icons.css"; // <-- add this
-import Skills from "../components/Skills";
-
 import Footer from "../components/Footer";
 import ProjectList from "../components/ProjectList";
 import AboutContent from "../components/AboutContent";
+import SkillsList from "../components/SkillsList";
+
 
 const Home = () => {
   return (
     <>
       <div>
         <Hero />
-
+        <SkillsList />
         <AboutContent />
-
-        <Skills />
         <ProjectList />
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

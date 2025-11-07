@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import "../App.css";
 import heroPhoto from "../assets/images/HeroImageTwo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
