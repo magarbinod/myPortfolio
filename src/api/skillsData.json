@@ -2,12 +2,13 @@
   "frontendDevelopment": [
     { "name": "HTML/CSS", "percent": 98 },
     { "name": "JavaScript", "percent": 95 },
-    { "name": "PHP", "percent": 90 },
+    { "name": "React", "percent": 90 },
     { "name": "Bootstrap", "percent": 98 }
   ],
   "backendDevelopment": [
     { "name": "PHP", "percent": 78 },
-   { "name": "Git", "percent": 90 },
+    { "name": "C#", "percent": 75 },
+    { "name": "Git", "percent": 90 },
     { "name": "MySQL", "percent": 72 }
   ],
   "designAndTools": [
@@ -16,7 +17,7 @@
     { "name": "Illustrator", "percent": 98 },
     { "name": "AdobeXD", "percent": 98 }
   ],
- 
+
   "professionalExpertise": {
     "description": "With years of hands-on experience crafting modern, responsive, and user-friendly websites, I specialize in turning creative ideas into functional digital experiences. From sleek business sites to dynamic web applications, my goal is to deliver clean code, pixel-perfect design, and seamless performance across all devices.",
     "stats": [
@@ -24,10 +25,5 @@
       { "icon": "diagram-3", "num": "50+", "label": "Projects Completed" }
     ]
   },
-  "certifications": [
-    "Udemy Learn React",
-    "C# Fundaments",
- 
-    "UI/UX Design"
-  ]
+  "certifications": ["Udemy Learn React", "C# Fundaments", "UI/UX Design"]
 }

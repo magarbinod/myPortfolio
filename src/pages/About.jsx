@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       {/* About Us */}
-      <div className="bm-spacer"></div>
+      <div className="bm-spacer-two"></div>
       <AboutContent />
     </div>
   );

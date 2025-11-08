@@ -33,7 +33,7 @@ const Hero = () => {
                 </p>
                 <div className="bm-button mt-5">
                   <Link to="/portfolio">
-                    <button className="btn btn-primary me-3">
+                    <button className="btn btn-primary me-lg-1">
                       View My Work
                     </button>
                   </Link>

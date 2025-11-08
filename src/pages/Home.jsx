@@ -16,7 +16,6 @@ const Home = () => {
         <SkillsList />
         <AboutContent />
         <ProjectList />
-        <Footer />
       </div>
     </>
   );

@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import heroPhoto from "../assets/images/binod-hero-profile.jpg";
 import "./AboutContent.css";
+import { Link } from "react-router-dom";
 
 const AboutContent = () => {
   useEffect(() => {
@@ -10,9 +11,9 @@ const AboutContent = () => {
       duration: 800,
       once: false,
       offset: 50,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
     });
-    
+
     AOS.refresh();
   }, []);
 
@@ -23,7 +24,7 @@ const AboutContent = () => {
         <div className="container">
           <div className="row d-flex align-items-center justify-content-center">
             {/* Profile Image */}
-            <div 
+            <div
               className="col-lg-6"
               data-aos="fade-right"
               data-aos-delay="100"
@@ -40,8 +41,8 @@ const AboutContent = () => {
             </div>
 
             {/* Intro & Skills */}
-            <div 
-              className="col-lg-6 px-0 px-lg-4"
+            <div
+              className="col-lg-6 px-lg-4 mt-5 mt-lg-0"
               data-aos="fade-left"
               data-aos-delay="100"
             >
@@ -78,15 +79,15 @@ const AboutContent = () => {
                       Certificate, Web Development
                     </div>
                   </div>
-                  <a href="/about">
+                  <Link to="/about">
                     <button className="btn btn-primary mt-4">Learn More</button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </div>
   );
 };
