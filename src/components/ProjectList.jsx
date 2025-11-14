@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import './ProjectList.css'
+import "./ProjectList.css";
 import portfolioItems from "../api/portfolioData.json";
+import Badge from "../styles/Badge";
 
 const ProjectList = () => {
   useEffect(() => {
@@ -10,23 +11,25 @@ const ProjectList = () => {
       duration: 800,
       once: false,
       offset: 50,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
     });
-    
+
     AOS.refresh();
   }, []);
+
+  const data = {
+    subTitle: "My Work"
+  }
 
   return (
     <section className="portfolio-section">
       <div className="container">
-        <div 
+        <div
           className="section-header text-center"
           data-aos="fade-up"
           data-aos-delay="0"
         >
-          <span className="cw-badge-two">
-            <i className="bi bi-code-slash me-2"></i>My Works
-          </span>{" "}
+          <Badge {...data} />
           <h2>
             Projects & <span className="bm-highlight">Case Studies</span>
           </h2>
@@ -39,11 +42,11 @@ const ProjectList = () => {
 
         <div className="row portfolio-container text-center">
           {portfolioItems.map((item, index) => (
-            <div 
-              key={item.id} 
+            <div
+              key={item.id}
               className="col-lg-6 portfolio-item mb-4"
               data-aos="fade-up"
-              data-aos-delay={100 + (index * 100)}
+              data-aos-delay={100 + index * 100}
               data-aos-duration="800"
             >
               <div className="portfolio-card">
@@ -56,10 +59,20 @@ const ProjectList = () => {
                   />
                   <div className="portfolio-overlay">
                     <div className="portfolio-actions">
-                      <a target="_blank" href={item.url} className="action-btn" rel="noreferrer">
+                      <a
+                        target="_blank"
+                        href={item.url}
+                        className="action-btn"
+                        rel="noreferrer"
+                      >
                         <i className="bi bi-eye"></i>
                       </a>
-                      <a target="_blank" href={item.url} className="action-btn" rel="noreferrer">
+                      <a
+                        target="_blank"
+                        href={item.url}
+                        className="action-btn"
+                        rel="noreferrer"
+                      >
                         <i className="bi bi-arrow-up-right"></i>
                       </a>
                     </div>

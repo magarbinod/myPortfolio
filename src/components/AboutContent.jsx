@@ -4,6 +4,8 @@ import "aos/dist/aos.css";
 import heroPhoto from "../assets/images/binod-hero-profile.jpg";
 import "./AboutContent.css";
 import { Link } from "react-router-dom";
+import Badge from "../styles/Badge";
+import { Button } from "../styles/Button";
 
 const AboutContent = () => {
   useEffect(() => {
@@ -16,6 +18,11 @@ const AboutContent = () => {
 
     AOS.refresh();
   }, []);
+
+  //=========================
+  const data = {
+    subTitle: "About",
+  };
 
   return (
     <div>
@@ -47,9 +54,7 @@ const AboutContent = () => {
               data-aos-delay="100"
             >
               <div className="bm-intro">
-                <span className="cw-badge-two">
-                  <i className="bi bi-code-slash me-2"></i>About
-                </span>{" "}
+                <Badge {...data} />
                 <h2>
                   Who I <span className="bm-highlight">Am</span>
                 </h2>
@@ -62,7 +67,7 @@ const AboutContent = () => {
                   collaborating with teams to deliver polished, visually
                   appealing digital experiences.
                 </p>
-                <div className="mt-3">
+                <div className="mt-3 mb-4">
                   <div className="wrapper d-flex">
                     <div className="me-2 fw-bold">
                       <i className="bi bi-mortarboard me-3"></i>2015 - 2019
@@ -79,15 +84,15 @@ const AboutContent = () => {
                       Certificate, Web Development
                     </div>
                   </div>
-                  <Link to="/about">
-                    <button className="btn btn-primary mt-4">Learn More</button>
-                  </Link>
                 </div>
+                 <Link to="/about">
+                    <Button variant="primary">Learn More</Button>
+                  </Link>
               </div>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   );
 };

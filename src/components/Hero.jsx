@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import { Button } from "../styles/Button";
 
 const Hero = () => {
   useEffect(() => {
@@ -33,17 +33,16 @@ const Hero = () => {
                 </p>
                 <div className="bm-button mt-5">
                   <Link to="/portfolio">
-                    <button className="btn btn-primary me-lg-1">
-                      View My Work
-                    </button>
+                    <Button variant="primary">View My Work</Button>
                   </Link>
+
                   <a
                     target="_blank"
                     href="https://drive.google.com/file/d/1dLJfGJ8MYHtvrxer-S8v8r5ooNDTl6Ad/view?usp=sharing"
                   >
-                    <button className="btn btn-outline border-white text-white">
-                      Resume <i class="bi bi-download mx-3"></i>
-                    </button>
+                    <Button variant="outline">
+                      Resume <i className="bi bi-download"></i>
+                    </Button>
                   </a>
                 </div>
 

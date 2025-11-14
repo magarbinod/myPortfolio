@@ -2,40 +2,32 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import skillsData from "../api/skillsData.json";
-import './SkillsList.css'
+import "./SkillsList.css";
+import Badge from "../styles/Badge";
 
 const SkillsList = () => {
-  const {
-    frontendDevelopment,
-    backendDevelopment,
-    designAndTools,
-    professionalExpertise,
-    certifications,
-  } = skillsData;
+  const { frontendDevelopment, backendDevelopment, designAndTools } =
+    skillsData;
 
   useEffect(() => {
     AOS.init({
       duration: 800,
       once: false,
       offset: 50,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
     });
-    
+
     AOS.refresh();
   }, []);
-
+  const data = {
+    subTitle: "My Skills",
+  };
   return (
     <section id="skills" className="skills section">
-      <div
-        className="container"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
+      <div className="container" data-aos="fade-up" data-aos-delay="100">
         <div className="row text-center">
           <div className="col-lg-12">
-            <span className="cw-badge-two">
-              <i className="bi bi-code-slash me-2"></i>My Skills
-            </span>
+            <Badge {...data} />
             <h2 className="mb-5">
               Professional <span className="bm-highlight">Expertise</span>
             </h2>
