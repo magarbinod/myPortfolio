@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./ProjectList.css";
-import portfolioItems from "../api/portfolioData.json";
+import portfolioItems from "../data/portfolioData.json";
 import Badge from "../styles/Badge";
 
 const ProjectList = () => {

@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
+import {AppProvider} from "./Context"
 function App() {
   // Create Theme Provider
   const MWtheme = {
@@ -21,12 +22,14 @@ function App() {
       <ThemeProvider theme={MWtheme}>
         <GlobalStyle/>
         <WelcomeLoader>
-          <Router>
+          <AppProvider>
+            <Router>
             <Header />
             <AppRoutes />
             <Footer />
             <ScrollToTop /> {/* Add this line */}
           </Router>
+          </AppProvider>
         </WelcomeLoader>
       </ThemeProvider>
     </>

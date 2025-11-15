@@ -1,24 +1,13 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import skillsData from "../api/skillsData.json";
 import "./SkillsList.css";
 import Badge from "../styles/Badge";
+import { useGlobalContext } from "../Context";
 
 const SkillsList = () => {
   const { frontendDevelopment, backendDevelopment, designAndTools } =
-    skillsData;
-
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      offset: 50,
-      easing: "ease-in-out",
-    });
-
-    AOS.refresh();
-  }, []);
+    useGlobalContext();
   const data = {
     subTitle: "My Skills",
   };
@@ -50,26 +39,30 @@ const SkillsList = () => {
                       <h3>Frontend Development</h3>
                     </div>
                     <div className="skills-animation">
-                      {frontendDevelopment.map((skill, index) => (
-                        <div className="skill-item" key={index}>
-                          <div className="skill-info">
-                            <span className="skill-name">{skill.name}</span>
-                            <span className="skill-percentage">
-                              {skill.percent}%
-                            </span>
+                      {frontendDevelopment.length > 0 ? (
+                        frontendDevelopment.map((skill, index) => (
+                          <div className="skill-item" key={index}>
+                            <div className="skill-info">
+                              <span className="skill-name">{skill.name}</span>
+                              <span className="skill-percentage">
+                                {skill.percent}%
+                              </span>
+                            </div>
+                            <div className="skill-bar progress">
+                              <div
+                                className="progress-bar"
+                                role="progressbar"
+                                aria-valuenow={skill.percent}
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                style={{ width: `${skill.percent}%` }}
+                              ></div>
+                            </div>
                           </div>
-                          <div className="skill-bar progress">
-                            <div
-                              className="progress-bar"
-                              role="progressbar"
-                              aria-valuenow={skill.percent}
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style={{ width: `${skill.percent}%` }}
-                            ></div>
-                          </div>
-                        </div>
-                      ))}
+                        ))
+                      ) : (
+                        <p>Loading skills...</p>
+                      )}
                     </div>
                   </div>
                 </div>
